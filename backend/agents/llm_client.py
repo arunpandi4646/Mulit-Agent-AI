@@ -1,5 +1,4 @@
 import os
-from openai import OpenAI
 
 DEFAULT_MODEL = "qwen/qwen3-coder:free"
 
@@ -25,6 +24,13 @@ class LLMClient:
         self._client = None
 
         if not self.offline_mode and self.api_key:
+            try:
+                from openai import OpenAI  # lazy import so offline mode works without openai
+            except Exception as e:
+                raise RuntimeError(
+                    "Python package 'openai' is not installed. Run: pip install -r backend/requirements.txt"
+                ) from e
+
             self._client = OpenAI(api_key=self.api_key, base_url=self.base_url)
 
     @property
