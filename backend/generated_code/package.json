@@ -1,0 +1,12 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A simple Hello World project in JavaScript",
+  "main": "src/helloWorld.js",
+  "scripts": {
+    "start": "node src/helloWorld.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

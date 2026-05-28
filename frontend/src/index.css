@@ -1,0 +1,10 @@
+/* 
+  Global styles are now handled by:
+  - styles/theme.css (Variables & Resets)
+  - App.css (Layout)
+*/
+body {
+    margin: 0;
+    padding: 0;
+    /* Ensure we don't have conflicting VS Code styles here */
+}

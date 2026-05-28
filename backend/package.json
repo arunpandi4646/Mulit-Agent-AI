@@ -1,0 +1,6 @@
+{
+  "name": "neurocode-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NeuroCode Python API (use python main.py — not this package.json)"
+}

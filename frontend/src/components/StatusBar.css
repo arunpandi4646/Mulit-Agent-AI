@@ -1,0 +1,24 @@
+.status-bar {
+    height: 22px;
+    background-color: #007acc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 11px;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: default;
+}
+
+.status-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+}

@@ -1,0 +1,30 @@
+.header {
+    height: 35px;
+    padding: 0 20px;
+    background-color: var(--vscode-sidebar-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--vscode-border);
+    text-transform: uppercase;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-text {
+    font-weight: 600;
+    font-size: 11px;
+    color: #bbbbbb;
+    letter-spacing: 0.5px;
+}
+
+.subtitle-text {
+    font-size: 9px;
+    color: #888888;
+    margin-top: 2px;
+    text-transform: none;
+}

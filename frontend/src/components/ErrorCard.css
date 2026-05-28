@@ -1,0 +1,83 @@
+.error-card {
+    padding: 10px;
+    margin-bottom: 1px;
+    background-color: var(--vscode-bg);
+    border-bottom: 1px solid var(--vscode-border);
+}
+
+.error-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.severity-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-right: 8px;
+    color: white;
+}
+
+.severity-badge.error {
+    background-color: var(--vscode-error);
+}
+
+.severity-badge.warning {
+    background-color: var(--vscode-warning);
+    color: #1e1e1e;
+}
+
+.severity-badge.info {
+    background-color: var(--vscode-info);
+}
+
+.file-info {
+    font-family: var(--vscode-mono-font);
+    font-size: 11px;
+    color: #aaaaaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.location {
+    color: #888888;
+}
+
+.error-message-container {
+    background-color: rgba(255, 255, 255, 0.04);
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    border-left: 3px solid transparent;
+}
+
+.severity-badge.error~.error-message-container {
+    border-left-color: var(--vscode-error);
+}
+
+.severity-badge.warning~.error-message-container {
+    border-left-color: var(--vscode-warning);
+}
+
+.error-message {
+    font-family: var(--vscode-mono-font);
+    font-size: 12px;
+    color: #cccccc;
+    white-space: pre-wrap;
+    word-break: break-all;
+    display: block;
+}
+
+.error-type {
+    font-size: 10px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.type-value {
+    color: #bbbbbb;
+    font-weight: 600;
+}
